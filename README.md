@@ -81,7 +81,7 @@ Overall Postman response takes 15-20 ms.
 Time for same success ratio query from H2 DB console ~ 1-2 ms which tells me that the DB query is not taking long. 
 Upon further inspection I found that most the time is spent on network initialization etc. 
 
-[network profile](PostmanNetworkProfile.PNG)
+![network profile](PostmanNetworkProfile.PNG)
 
 ### Scope Reduction
 1. Removed "@" from timestamp and version from the Example Log Record for easier JSON Mapping on load API
