@@ -1,0 +1,15 @@
+DROP TABLE IF EXISTS LOG_RECORDS;
+
+CREATE TABLE LOG_RECORDS(
+timestamp DATETIME NOT NULL,
+version INT NOT NULL,
+message VARCHAR(500) NOT NULL,
+requestDuration INT NOT NULL,
+sourceIp VARCHAR(50) NOT NULL,
+requestMethod VARCHAR(6) NOT NULL,
+requestEndpoint VARCHAR(500) NOT NULL,
+requestProtocol VARCHAR(10) NOT NULL,
+requestUser VARCHAR(100) NOT NULL,
+responseStatus INT NOT NULL,
+responseSize INT NOT NULL
+);
